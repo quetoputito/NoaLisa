@@ -1,0 +1,16 @@
+NoaLisa\Bundle\BookingRequestBundle\Document\BookingRequest:
+  type: document
+  fields:
+    id:
+      type: id
+      id:  true
+    start_date:
+      type: date
+    days_count:
+      type: int
+    people_count:
+      type: int
+    request_time:
+      type: timestamp
+    read_by_owner:
+      type: boolean

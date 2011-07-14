@@ -1,0 +1,14 @@
+NoaLisa\Bundle\EntitiesSetBundle\Document\PictureType:
+  type: document
+  fields:
+    id:
+      type: id
+      id:  true
+    name:
+        type: string
+
+     
+        
+        
+        
+        

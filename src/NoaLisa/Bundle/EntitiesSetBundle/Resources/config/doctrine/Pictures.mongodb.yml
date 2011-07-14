@@ -1,0 +1,17 @@
+NoaLisa\Bundle\EntitiesSetBundle\Document\Pictures:
+        type: document
+        fields:
+                id:
+                        type: id
+                        id:  true
+                name:
+                    type: string
+                code:
+                    type: string
+                order:
+                    type: int
+                type:
+                    type: int
+        embedOne:
+            picture_type:
+                targetDocument: NoaLisa\Bundle\EntitiesSetBundle\Document\PictureType

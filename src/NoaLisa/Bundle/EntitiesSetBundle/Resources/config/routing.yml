@@ -1,0 +1,3 @@
+NoaLisaEntitiesSetBundle_homepage:
+    pattern:  /createEntity
+    defaults: { _controller: NoaLisaEntitiesSetBundle:Default:index }

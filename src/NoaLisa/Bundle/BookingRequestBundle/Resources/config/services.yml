@@ -1,0 +1,7 @@
+parameters:
+#    noa_lisa_booking_request.example.class: NoaLisa\Bundle\BookingRequestBundle\Example
+
+services:
+#    noa_lisa_booking_request.example:
+#        class: %noa_lisa_booking_request.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

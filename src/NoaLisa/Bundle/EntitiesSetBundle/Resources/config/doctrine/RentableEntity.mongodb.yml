@@ -1,0 +1,90 @@
+NoaLisa\Bundle\EntitiesSetBundle\Document\RentableEntity:
+        type: document
+        embedOne:
+                accomodation_type:
+                        targetDocument: NoaLisa\Bundle\EntitiesSetBundle\Document\AccomodationType
+                view:
+                        targetDocument: NoaLisa\Bundle\EntitiesSetBundle\Document\Views
+        embedMany:
+                pictures:
+                        targetDocument: NoaLisa\Bundle\EntitiesSetBundle\Document\Pictures
+                  
+        fields:
+                id:
+                        type: id
+                        id:  true
+                name:
+                    type: string
+                title:
+                    type: string
+                space:
+                        type: int
+                bedrooms_count:
+                        type: int
+                bed1p_count:
+                        type: int
+                bed2p_count:
+                        type: int
+                pictures_count:
+                        type: int
+                description:
+                        type: string
+                disabled_person_ok:
+                        type: boolean
+                wifi_ok:
+                        type: boolean
+                booking_online_ok:
+                        type: boolean
+                private_bathroom_included:
+                        type: boolean
+                tvset_included:
+                        type: boolean
+                computer_included:
+                        type: boolean
+                balcony_included:
+                        type: boolean
+                terrace_included:
+                        type: boolean
+                hifi_included:
+                        type: boolean
+                private_wc_included:
+                        type: boolean
+                fan_included:
+                        type: boolean
+                air_conditionned_included:
+                        type: boolean
+                towels_included:
+                        type: boolean
+                sheets_included:
+                        type: boolean
+                bath_included:
+                        type: boolean
+                separated_wc_included:
+                        type: boolean
+                forbid_allocation:
+                        type: boolean
+                address:
+                    type: string
+                zip:
+                    type: string
+                neighborhood:
+                    type: string
+                website:
+                    type: string
+                access_description:
+                    type: string
+                animals_ok:
+                        type: boolean
+                furnished_kitchen_included:
+                        type: boolean
+                extrabed_included:
+                        type: boolean
+                managed_calendar:
+                        type: boolean
+                checkin_time:
+                    type: string
+                checkout_time:
+                    type: string
+                warranty_deposit_amount:
+                        type: int
+                        

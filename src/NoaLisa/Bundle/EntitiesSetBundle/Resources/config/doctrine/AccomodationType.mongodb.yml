@@ -1,0 +1,14 @@
+NoaLisa\Bundle\EntitiesSetBundle\Document\AccomodationType:
+  type: document
+  fields:
+    id:
+      type: id
+      id:  true
+    name:
+        type: string
+
+     
+        
+        
+        
+        

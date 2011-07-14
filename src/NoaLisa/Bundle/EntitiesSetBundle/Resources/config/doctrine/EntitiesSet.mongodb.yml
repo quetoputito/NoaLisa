@@ -1,0 +1,70 @@
+NoaLisa\Bundle\EntitiesSetBundle\Document\EntitiesSet:
+        type: document
+        embedOne:
+                entity_set_type:
+                        targetDocument: NoaLisa\Bundle\EntitiesSetBundle\Document\EntitySetType
+        embedMany:
+                rentable_entities:
+                        targetDocument: NoaLisa\Bundle\EntitiesSetBundle\Document\RentableEntity
+                pictures:
+                        targetDocument: NoaLisa\Bundle\EntitiesSetBundle\Document\Pictures
+                themes:
+                        targetDocument: NoaLisa\Bundle\EntitiesSetBundle\Document\Themes
+                paiement_methods:
+                        targetDocument: NoaLisa\Bundle\EntitiesSetBundle\Document\PaiementMethods
+                included_services:      
+                        targetDocument: NoaLisa\Bundle\EntitiesSetBundle\Document\Services
+                unincluded_services:    
+                        targetDocument: NoaLisa\Bundle\EntitiesSetBundle\Document\Services
+                included_activities:    
+                        targetDocument: NoaLisa\Bundle\EntitiesSetBundle\Document\Activities      
+                unincluded_activities:  
+                        targetDocument: NoaLisa\Bundle\EntitiesSetBundle\Document\Activities  
+        fields:
+                id:
+                        type: id
+                        id:  true
+                name:
+                    type: string
+                address:
+                        type: string
+                zip:
+                        type: string
+                people_max_count:
+                        type: int
+                total_bedrooms_count:
+                        type: int
+                website:
+                    type: string
+                access_desc:
+                    type: string
+                personal_desc:
+                    type: string
+                animals_ok:
+                        type: boolean
+                shared_kitchen:
+                        type: boolean
+                surface_garden:
+                        type: int
+                disabled_person_ok:
+                        type: boolean
+                babies_ok:
+                        type: boolean
+                smokers_ok:
+                        type: boolean
+                cat_on_site:
+                        type: boolean
+                dog_on_site:
+                        type: boolean
+                building_year:
+                        type: int
+                paiement_advance_required:
+                        type: boolean
+                seasoned_prices:
+                        type: boolean
+                entities_at_same_price:
+                        type: boolean
+                pictures_count:
+                        type: int
+                forbid_allocation:
+                        type: boolean

@@ -1,0 +1,7 @@
+parameters:
+#    noa_lisa_entities_set.example.class: NoaLisa\Bundle\EntitiesSetBundle\Example
+
+services:
+#    noa_lisa_entities_set.example:
+#        class: %noa_lisa_entities_set.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

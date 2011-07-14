@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}
+            <link href="{{ asset('css/common.css') }}" rel="stylesheet" type="text/css" media="screen" />
+        {% endblock %}
+        {% block javascripts %}
+        <script type="text/javascript" src="{{ asset('js/jquery/js/jquery-1.6.1.min.js') }}"></script>
+        {% endblock %}
+    </head>
+    <body>
+    
+    <div id="global">
+		<div id="subglobal">
+			<div id="main">
+				<div id="header">
+                	<div id="header-top">
+                            <img src="{{ asset('images/logo.gif') }}" alt="" width="159" height="43" /></div>
+      			</div> <!-- end of header-top -->
+  					<div id="header-bottom">                   
+                        <div id="navcontainer">
+                            <ul id="navlist">                        
+                            </ul>
+                        </div> <!-- end of navcontainer -->
+  					</div> <!-- end of header-bottom -->
+  				</div> <!-- end of header -->
+                <div id="body-main">
+                    <div id="main-top">
+                        {% block maintop %}{% endblock %}
+                    </div>  <!-- end of main-top -->
+    		</div>
+    
+
+    </body>
+</html>

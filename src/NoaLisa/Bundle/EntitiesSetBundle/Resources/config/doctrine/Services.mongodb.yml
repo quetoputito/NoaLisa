@@ -1,0 +1,8 @@
+NoaLisa\Bundle\EntitiesSetBundle\Document\Services:
+  type: document
+  fields:
+    id:
+      type: id
+      id:  true
+    name:
+        type: string
